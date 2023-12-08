@@ -1,0 +1,99 @@
+#include <stdio.h>
+int main(void)
+
+// 문제 1
+// {
+//     int num;
+
+//     printf("정수를 입력하세요. ");
+//     scanf("%d", &num);
+//     printf("16진수 결과: %x \n",num);
+//     return 0;
+// }
+
+
+// 문제 2   (거꾸로가 안됌)
+// {
+//     int num1, num2;
+//     int i,max,min;
+//     printf("정수 2개 입력: ");
+//     scanf("%d %d",&num1,&num2);
+
+//     while (num1<=num2)
+//     {
+//         for(i=1;i<10;i++)
+//             printf("%d*%d=%d \n", num1,i,num1*i);
+//             num1++;
+//     }
+//     return 0;
+// }
+
+
+// 문제 3
+// {
+//     int num1, num2;
+//     int i,max;
+//     printf("두 정수 입력: ");
+//     scanf("%d %d",&num1, &num2);
+//     for (i=1; i<=num1 && i<=num2;i++ )
+//     {
+//         if (num1%i == 0 && num2%i == 0)
+//             max = i;    
+//     }
+//     printf("%d와 %d의 최대공약수 %d \n", num1,num2,max);
+//     return 0;
+// }
+
+
+// 문제 4
+// {
+//     const int cream = 500;          
+//     const int shr = 700;
+//     const int cola = 400;
+//     int i,j,k;
+//     int money = 3500;
+
+//     printf("현재 당신이 소유하고 있는 금액: %d \n", money);
+//     for(i = 1; i <= money/cream ; i++)
+//     {
+//         for (j = 1; j <= money/cola; j++)
+//         {
+//             for (k=1; k <= money/shr; k++)                          
+//         if (money == cream*i+cola*j+shr*k)                          // 돈에 딱 맞게 사야해서 제품당 곱하기
+//             {
+//             printf("크림빵 %d개,새우깡 %d개, 콜라 %d개 \n",i,j,k);
+//             }
+            
+//         }
+//     }
+//     return 0;
+// }
+
+// 문제 5
+
+
+
+
+
+
+
+
+// 문제 8
+// int Multi(int n);
+// int main(void)
+// {
+//     int n;
+//     printf("정수를 입력하세요. ");
+//     scanf("%d",&n);
+//     printf("2의 %d승은 %d입니다. \n", n , Multi(n));
+//     return 0;
+// }
+// int Multi(int n)
+// {
+//     if(n == 0)
+//         return 1;
+//     else
+//         return 2 * Multi(n-1);
+// }
+
+

@@ -1,0 +1,90 @@
+// 2차원 배열의 각 행 별 최댓값 구하기
+
+// #include<stdio.h>
+// #include <stdlib.h>
+// #include <time.h>
+
+// int main(void)
+// {
+//     srand(time(NULL)); 
+//     int arr[3][5];
+//     int max = 0;
+//     for(int i=0; i<3 ; i++)       
+//     {
+//         for(int j=0;j<5;j++)
+//         {
+//             arr[i][j] = rand()%100+1; 
+//         }
+        
+//     }
+//     for (int i=0; i<3 ; i++)
+//     {
+//         for(int j=0;j<5;j++)
+//         {
+//             if(max<arr[i][j])
+//                 max=arr[i][j];
+//         }
+//         printf("%d\n", max);
+
+//     }
+//     return 0;
+// }
+
+//////////////////////////////////////////////////////
+
+// a + b + c = 1000 이 되는 피타고라스 수
+
+// #include<stdio.h>
+// int main(void)
+// {
+//     int a,b,c;
+//     for(a=1;a<1000;a++)
+//         for(b=a+1;b<1000;b++)
+//         {
+//             c = 1000-a-b;
+//             if(a*a + b*b == c*c)
+//                 printf("%d \n",a*b*c);
+//         }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////
+
+// 매월 1일이 일요일인 경우
+
+// #include<stdio.h>
+// int main(void)
+// {
+//     int year,month,day,day2;
+//     int date=2;
+//     int count = 0;
+//     for(year=1901;year<=2000;year++)
+//     {
+//         for(month=1;month<=12;month++)
+//         {
+//             if(month == 2)
+//                 {
+//                 if(year%4 == 0 || year%400 == 0 || (year%4 == 0 && year%100 != 0))
+//                     day=29;
+//                 else
+//                     day=28;
+//                 }
+//             else if(month == 4 || month == 6 || month == 9 || month ==11)
+//                 day=30;
+//             else
+//                 day=31;
+            
+//             for(day2=1;day2<=day;day2++)            // day2=일수
+//             {
+//                 if(day2 ==1 && date%7 ==0)          //date=요일 //1일과 일요일이 둘다 되는 날
+//                 {
+//                     count++;
+//                 }
+//                 date++;                     
+//             }
+//         }
+//     }
+//     printf("매월 1일인 일요일은 총 %d일 입니다. \n", count);
+//     return 0;
+// }
+

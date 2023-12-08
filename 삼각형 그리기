@@ -1,0 +1,30 @@
+// #include <stdio.h>
+// int main(void)
+
+// {
+//     int Draw(int tri);
+//     int n;
+//     printf("삼각형의 크기 숫자를 입력하시오.");
+//     scanf(" %d", &n);
+//     Draw(n);
+
+// }
+
+// int Draw(int tri)
+// {   
+//     int i,j,s;
+//     for (i = 1; i <= tri; i++)
+//     {   
+//             for(j=0 ; j < tri-i; j++)
+//             {
+//                 printf(" ");
+//             }
+//             for (int s=0; s<+i*2-1;s++)
+//             {
+//                 printf("*");
+//             }
+//             printf("\n");
+//     }
+//     return 0;
+// }
+

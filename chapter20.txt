@@ -1,0 +1,260 @@
+// 문제1
+// #include<stdio.h>
+// void Change(int (*arr)[4],int (*temp)[4]);
+// void Save(int (*arr)[4],int (*temp)[4]);
+
+// int main(void)
+// {
+//     int i,k;
+//     int temp[4][4];
+//     int arr[4][4] = 
+//                     {{1,2,3,4},
+//                     {5,6,7,8},
+//                     {9,10,11,12},
+//                     {13,14,15,16}};
+
+//     // 배열의 행과 열을 바꾸고 저장하는 과정을 반복
+    // Change(arr,temp);
+    // Save(arr,temp);
+    // Change(arr,temp);
+    // Save(arr,temp);
+    // Change(arr,temp);
+    // Save(arr,temp);
+
+//     // 변경된 배열을 출력
+//     for(int i = 0; i<4 ; i++)
+//     {
+//         for(int k=0; k<4 ; k++)
+//         {
+//             printf("%5d",arr[i][k]);
+//         }
+//         printf("\n");
+//     }
+// }
+// void Save(int (*arr)[4], int (*temp)[4])        // 저장하는 함수, 2차원배열 포인터
+// {
+//     for(int i = 0; i<4 ; i++)               
+//     {
+//         for(int k=0; k<4 ; k++)
+//         {
+//             arr[i][k]=temp[i][k];
+//         }
+//     }    
+// }
+// void Change(int (*arr)[4], int (*temp)[4])      // 바꾸는 함수
+// {
+//     for(int i = 0; i<4 ; i++)
+//     {
+//         for(int k=0; k<4 ; k++)
+//         {
+//             temp[k][3-i]= arr[i][k];        // 행을 반전시키는 역할
+//         }
+//     }
+// }
+
+// 문제2
+
+// #include<stdio.h>
+// int main(void)
+// {
+//     int n;
+
+//     printf("숫자 입력: ");
+//     scanf("%d",&n);
+    
+//     int arr[n][n];
+//     int i,k;
+//     int temp;
+//     int a= 1;
+//     while()
+//        for(int k = 0; k < n; k++)
+//        {
+//             arr[0][k] = a;
+//             a++;
+//        }
+//        for(int i=1; i<n;i++)
+//        {
+//             arr[i][n] =a;
+//             a++;
+//        }
+//         for(int i=1; i<n;i++)
+//        {
+//             arr[i][n] =a;
+//             a++;
+//        }
+//         for(int i=1; i<n;i++)
+//        {
+//             arr[i][n] =a;
+//             a++;
+//        }
+       
+    // a=1;
+    // for (int i = 0; i < n; i++)
+    // {
+    //    for (int k = 0; k < n; k++)
+    //    {
+    //         printf("%5d",arr[i][k]);
+    //         arr[i][k] = a;
+    //    }
+    //    printf("\n");
+    // }
+
+}
+
+
+
+
+
+
+// 문제3
+// #include<stdio.h>
+// #include<stdlib.h>
+
+// int main(void)
+// {
+//     printf("난수의 범위: 0부터 %d까지 \n",RAND_MAX);
+//     for(int i=0;i<5;i++)
+//         printf("난수 출력: %d \n", rand()%99+1);
+//     return 0;
+// }
+
+// 문제4
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+
+// int main(void)
+// {
+//     srand((int)time(NULL));
+
+//     for(int i=0;i<2;i++)
+//         printf("주사위 결과: %d \n", rand()%6+1);
+//     return 0;
+// }
+
+// 문제5
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+
+// int main(void)
+// {
+//     int select,i,num;
+//     int count = 0, count2 = 0, count3 = 0;
+//     srand((int)time(NULL));
+
+//     for(i=0;i<7;i++)
+//     {
+//         printf("바위는 1, 가위는 2, 보는 3: ");
+//         scanf("%d",&select);
+//         num = rand()%3+1;
+//         printf("컴퓨터 선택: %d \n",num);
+
+//         if(select == 1 && num == 1)
+//         {
+//             printf("당신은 바위 선택, 컴퓨터는 바위 선택, 비겼습니다! \n");
+//             count2++;
+//         }
+//         else if(select == 1 && num == 2)
+//         {
+//             printf("당신은 바위 선택, 컴퓨터는 가위 선택, 당신이 이겼습니다! \n");
+//             count++;
+//         }
+//         else if(select == 1 && num == 3)
+//         {
+//             printf("당신은 바위 선택, 컴퓨터는 보 선택, 당신이 졌습니다! \n");
+//             printf("최종 결과: %d승 %d무 %d패 \n",count,count2,count3);
+//             printf("컴퓨터에서 져서 게임이 끝났습니다. \n");
+//             count3++;
+//             break;
+//         }
+//         else if(select == 2 && num == 2)
+//         {
+//             printf("당신은 가위 선택, 컴퓨터는 가위 선택, 비겼습니다! \n");
+//             count2++;
+//         }
+//         else if(select == 2 && num == 3)
+//         {
+//             printf("당신은 가위 선택, 컴퓨터는 보 선택, 당신이 이겼습니다! \n");
+//             count++;
+//         }
+//         else if(select == 2 && num == 1)
+//         {
+//             printf("당신은 가위 선택, 컴퓨터는 바위 선택, 당신이 졌습니다! \n");\
+//             printf("최종 결과: %d승 %d무 %d패 \n",count,count2,count3);
+//             printf("컴퓨터에서 져서 게임이 끝났습니다. \n");
+//             count3++;
+//             break;
+//         }
+//         else if(select == 3 && num == 3)
+//         {
+//             printf("당신은 보 선택, 컴퓨터는 보 선택, 비겼습니다! \n");
+//             count2++;
+//         }
+//         else if(select == 3 && num == 1)
+//         {
+//             printf("당신은 보 선택, 컴퓨터는 바위 선택, 당신이 이겼습니다! \n");
+//             count++;
+//         }
+//         else if(select == 3 && num == 2)
+//         {
+//             printf("당신은 보 선택, 컴퓨터는 가위 선택, 당신이 졌습니다! \n");
+//             printf("최종 결과: %d승 %d무 %d패 \n",count,count2,count3);
+//             printf("컴퓨터에서 져서 게임이 끝났습니다. \n");
+//             count3++;
+//             break;
+//         }
+//     }
+//     return 0;
+// }
+
+// 문제6
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int main(void)
+// {
+//     int com[3];
+//     int user[3];
+//     int ball = 0,strike = 0,count=1;
+//     srand(time(NULL));
+// for (int i = 0; i < 3; i++)
+//     {
+//         com[i]=(rand()%9)+1;
+//         // printf("%d ",com[i]);
+//         if(com[0]==com[1] || com[0]==com[2] || com[1]==com[2])
+//         {
+
+//             for (int i = 0; i < 3; i++)
+//             {
+//                 com[i]=(rand()%9)+1;
+//             }
+//         }
+//     }
+//     for (int k=0; k <9; k++)       // 9회까지 게임 진행
+//     {
+        
+//         printf("%d번째 도전: ",count);            
+//         scanf("%d%d%d",&user[0],&user[1],&user[2]);
+//         strike = 0;
+//         ball = 0;
+//         count++;
+
+//         // 사용자가 입력한 숫자와 컴퓨터의 숫자를 비교하여 스트라이크와 볼 개수를 계산
+//         for(int i=0; i<3; i++)
+//         {
+//             if(com[i] == user[i])
+//                 strike++;
+//             else if(com[i] == user[0] || com[i] == user[1] || com[i] == user[2])
+//                 ball++;
+//         }
+//         printf("%d STRIKE %d BALL \n", strike,ball);
+//         // 스트라이크가 3개면 이김
+//         if(strike == 3)
+//             printf("이김ㅋ;  \n");
+//         // 9회까지 진행했을 때
+//         else if(k == 8)
+//             printf("졌음ㅋ; \n");
+//     }  
+//     return 0;
+// }

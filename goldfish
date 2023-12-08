@@ -1,0 +1,25 @@
+// 금붕어 키우기
+// #include <stdio.h>
+// int main(void)
+// {
+//     int little = 0, turn = 0, fish = 1;     // 새끼, 턴, 어항에 물고기
+//     int range = (50-20)+1;                  // 죽는 물고기 범위
+//     while(fish<500)
+//     {
+//         int i;
+//         for(i=0; i<fish ; i++)
+//         {
+//             little += rand()%5+1;           // 랜던으로 1~5쌍 태어남
+//         }
+//         fish += little;                     // 태어난 물고기도 추가
+//         little = 0;                         // 새끼 초기화
+//         if(turn>0)                          // 첫턴에는 안죽어야함
+//         {   
+//             fish = fish - fish*((rand() % range +20)*0.01);     //전체 물고기 = 물고기 - 물고기((20~30범위)*0.01)
+
+//         }
+//         turn++;                             // 1턴씩 증가
+//     }
+//     printf("%d턴 후 500쌍이 넘었습니다. \n", turn);
+//     return 0;
+// }

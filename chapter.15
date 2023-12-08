@@ -1,0 +1,204 @@
+// 문제1
+
+// #include<stdio.h>
+// void Number(int *arr, int len);
+// void Number2(int *arr,int len);
+// int main(void)
+// {
+//     int arr[10];
+//     int i;
+    
+//     for(int i=0; i<10;i++)
+//     {
+//         printf("정수 10개 입력: ");
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("홀수 결과: ");
+//     Number(arr, sizeof(arr) / sizeof(int));
+//     printf("짝수 결과: ");
+//     Number2(arr, sizeof(arr) / sizeof(int));
+//     return 0;
+// }
+// void Number(int *arr, int len)      //홀수
+// {   
+//     int i;
+//     for(i=0;i<len;i++)
+//     {
+//         if (arr[i]%2 == 1)
+//             printf("%d ", arr[i]);
+//     }
+// }
+// void Number2(int *arr, int len)     //짝수
+// {   
+//     int i;
+//     for(i=0;i<len;i++)
+//     {
+//         if (arr[i]%2 == 0)
+//             printf("%d ", arr[i]);
+//     }
+// }
+
+// 문제2
+// #include<stdio.h>
+// int main(void)
+
+// {
+//     int arr[10];
+//     int num,i,k;
+//     printf("정수 입력: ");
+//     scanf("%d",&num);
+//     for(i=0; i<10; i++)
+//     {
+//         if(num == 1)
+//         {
+//             arr[i] = 1;
+//             break;
+//         }
+//         else
+//             arr[i] = num%2;
+//             num = num/2;
+//     }
+//     for(k=i;k>=0;k--)
+//         printf("%d",arr[k]);
+//     return 0;
+// }
+
+// 문제3
+// #include<stdio.h>
+// int main(void)
+// {
+//     int arr[10];
+//     int num;
+//     int k = 0, j = 9;
+//     for(int i=0; i<10;i++)
+//     {
+//         printf("정수 10개 입력: ");
+//         scanf("%d",&num);
+//         if (num%2 == 1)
+//             arr[k++]=num;
+//         else
+//             arr[j--]=num;
+//     }
+
+//     for(int i=0;i<10;i++)
+//         printf("%d ", arr[i]);
+
+//     return 0;
+// }
+
+
+// 문제 4
+// #include<stdio.h>
+// #include<string.h>
+// int headoor(int len, char* str);
+// int main(void)
+// {
+//     char string[10];
+//     printf("문자열 입력: ");
+//     scanf("%s",&string);
+//     if(headoor(strlen(string),string) == 1)
+//         printf("회문입니다. ");
+//     else
+//         printf("회문이 아닙니다. ");
+// }
+// int headoor(int len, char* str)
+// {  
+//     int k = len/2;
+//     for (int i=0;i<k;i++)
+//     {
+//         if(str[i] == str[len+1-i])
+//         {
+//             return 1;
+//         }
+//     }
+//     return 0;
+// }
+
+// 문제5
+// #include<stdio.h>
+// void DeSort(int *arr, int len);
+// int main(void)
+// {
+//     int arr[7];
+//     for(int i=0; i<7;i++)
+//     {
+//         printf("정수 7개 입력: ");
+//         scanf("%d",&arr[i]);
+//     }
+
+//     DeSort(arr,7);
+//     for(int i=0; i<7;i++)
+//         printf("%d ", arr[i]);
+
+//     printf("\n");
+//     return 0;
+// }
+// void DeSort(int *arr, int len)
+// {
+//     int temp;
+//     for(int i=0;i<len-1;i++)
+//     {
+//         for(int j=0; j<(len-i)-1;j++)
+//         {
+//             if(arr[j]<arr[j+1])
+//             {
+//                 temp=arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=temp;
+//             }
+//         }
+//     }
+// }
+
+// #include<stdio.h>
+// void Pattern(int arr[], int len);
+// int main(void)
+// {
+//     int n = 0;
+//     printf("정수 입력: ");
+//     scanf("%d",&n);
+//     int arr[n];
+
+//     Pattern(arr, sizeof(arr) / sizeof(int));
+//     for (int i=0;i<n;i++)
+//     {
+//         printf("%d ", arr[i]);
+//     }
+//     return 0;
+// }
+// void Pattern(int arr[], int len)
+// {
+//     int m = len/2;
+//     int k = (len-1)/2;
+//     int j = len;
+//     int a = 1;
+//     if(len%2 == 1)
+//     {
+//         for(int i=k; i>=0;i--)
+//         {
+//             arr[i] = a;
+//             a++;
+//         }
+//         a = 1;
+//         for(int i=k; i<j;i++)
+//         {
+//             arr[i] = a;
+//             a++;
+//         }
+//     }
+//     if(len%2 == 0)
+//     {
+//         for(int i=m-1; i>=0;i--)
+//         {
+//             arr[i] = a;
+//             a++;
+//         }
+//         a = 1;
+//         for(int i=m; i<j;i++)
+//         {
+//             arr[i] = a;
+//             a++;
+//         }
+//     }
+// }
+

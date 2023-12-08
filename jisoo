@@ -1,0 +1,33 @@
+#include <stdio.h>
+double Power(int m, int n);
+int main(void)
+{   
+    int m,n;
+    printf("정수와 지수를 입력하세요. ");
+    scanf("%d %d", &m, &n);
+    Power(m,n);
+    return 0;
+}
+double Power(int m, int n)
+{   
+    double result = 1;
+    int i;
+    
+    if (n>0)
+    {
+        for (i=0 ; i<n ;i++)
+        {
+        result *= m;
+        }
+        printf("%f \n",result);
+    }
+    else if (n<0)
+    {
+        for (i=0; i>n; i--)
+        {
+        result *= 1/(double)m;         
+        }
+        printf("%f\n", result);
+    }
+    return 0;
+}

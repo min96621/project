@@ -1,0 +1,575 @@
+// #include <stdio.h>
+// int main(void)
+
+
+// 문제1 p.74
+// {
+//     int num1, num2;
+
+//     printf("두개의 정수: ");
+//     scanf(" %d %d ", &num1, &num2);
+//     printf("%d\n", num1*num2);
+//     return 0;
+// }
+// 문제2
+// {
+//     int num1,num2,num3;
+//     int result;
+//     printf("세개의 정수 입력: ");
+//     scanf("%d %d %d", &num1, &num2, &num3);
+//     result = num1*num2+num3;
+//     printf("%d*%d+%d=%d\n", num1, num2, num3, result);
+//     return 0;
+// }
+
+// 문제3
+// {
+//     int num;
+//     printf("정수 입력: ");
+//     scanf(" %d ", &num);
+
+//     printf(" %d\n", num*num);
+//     return 0;
+// }
+
+// 문제4
+// {
+//     int num1, num2;
+    
+//     printf("두개의 정수: ");
+//     scanf("%d %d", &num1, &num2);
+    
+//     printf(" 몫: %d 나머지: %d\n", num1/num2, num1%num2);
+//     return 0;
+// }
+
+// 문제5
+// {
+//     int num1,num2,num3;
+//     int result;
+//     printf("세개의 정수: ");
+//     scanf(" %d %d %d", &num1, &num2, &num3);
+//     result = (num1-num2)*(num2+num3)*(num3%num1);
+//     printf(" %d \n", result);
+//     return 0;
+// }
+
+
+// 문제1 p.100
+
+// {
+//     int num;
+//     int result;
+//     printf("정수 입력: ");
+//     scanf("%d",&num);
+//     num = ~num ;
+//     num = num+1;
+//     printf("%d\n", num);
+// }
+
+// 문제 2
+
+// {
+//     int num = 3;
+
+//     num = num <<3;
+//     num = num >>2;
+//     printf("%d\n",num);
+//     return 0;
+
+// }
+
+// 문제1 p.118
+// {
+//     int num1,num2,num3,num4;
+//     int result;
+//     printf("좌상단 x,y 좌표: ");
+//     scanf(" %d %d", &num1,&num2);
+//     printf("우상단 x,y 좌표: ");
+//     scanf(" %d %d", &num3,&num4);
+//     result = (num3-num1)*(num4-num2);
+//     printf(" %d \n", result);
+//     return 0;
+// }
+
+// 문제2
+// {
+//     double num1,num2;
+//     printf("두개의 정수 입력: ");
+//     scanf(" %lf %lf", &num1,&num2);
+//     printf("%f\n",num1+num2);
+//     printf("%f\n",num1-num2);
+//     printf("%f\n",num1*num2);
+//     printf("%f\n",num1/num2);
+//     return 0;
+// }
+
+// 문제3
+// 3-1. 0~127
+// 3-2. 1씩 증가
+// 3-3. 32 차이
+
+// 문제4
+// {
+//     int num;
+//     printf("정수 입력: ");
+//     scanf("%d",&num);
+//     printf("%c\n",num);
+//     return 0;
+// }
+
+// 문제5
+// {
+//     char ch;
+//     printf("문자 입력: ");
+//     scanf("%c",&ch);
+//     printf("%d\n",ch);
+//     return 0;
+// }
+
+// 문제1 P.155
+// {
+//     int num;
+//     int i = 0;
+//     printf("정수 입력: ");
+//     scanf("%d",&num);
+
+//     while(i<num)
+//     {
+//         printf("Hello world!\n");
+//         i++;
+//     }
+//     return 0;
+// }
+
+// 문제2
+// {
+//     int num = 0;
+//     int num1 = 0;
+//     printf("정수 입력: ");
+//     scanf("%d",&num1);
+//     while(num++<num1)
+//     {
+//         printf("%d\n",3*num);
+//     }
+//     return 0;
+// }
+
+// 문제3
+// {
+//     int num;
+//     int total = 0;
+//     while(num !=0)
+//     {
+//         printf("정수 입력: ");
+//         scanf("%d",&num);
+//         total += num;
+//     }
+
+//     printf("%d\n",total);
+//     return 0;
+// }
+
+// 문제4
+// {
+//     int dan = 0, num = 9;
+//     printf("몇 단? ");
+//     scanf("%d\n",&dan);
+
+//     while(num>0)
+//     {
+//         printf("%d*%d=%d\n",dan,num,dan*num);
+//         --num;
+//     }
+//     return 0;
+// }
+
+// 문제5
+// {
+//     int num , num2;
+//     int num1= 0, total =0;
+//     printf("정수를 몇개 입력할 것인가? ");
+//     scanf("%d",&num);
+//     while(num1++<num)
+//     {
+//         printf("정수 입력: ");
+//         scanf("%d",&num2);
+//         total += num2;
+
+//     }
+    
+//     printf("%f\n",(double)total/num);
+//     return 0;
+    
+// }
+
+// 문제1 p.157
+// {
+//     int total = 0, num = 0, num1 = 0;
+//     while(num1<5)
+//     {
+//         while(num<=0)
+//         {
+//             printf("0보다 큰 수를 입력하시오. %d ",num1 +1);
+//             scanf("%d",&num);
+//         }
+//         total += num;
+//         num = 0;
+//         num1++;
+//     }
+//     printf("%d\n",total);
+//     return 0;
+// }
+
+// 문제2
+// {
+//     int i =0, k=0;
+//     while(i<5)
+//     {
+//         while(k<i)
+//         {
+//             printf("o ");
+//             k++;
+//         }
+//         k=0;
+//         printf("*\n");
+//         i++;
+//     }
+//     return 0;
+// }
+
+// 문제1 p.161
+// {
+//     int total = 0, num =0;
+
+//     do
+//     {
+//         printf("정수 입렵: ");
+//         scanf("%d",&num);
+//         total += num;
+//     } while (num != 0);
+//     printf("합계: %d\n",total);
+//     return 0;
+// }
+
+// 문제2
+// {
+//     int total =0, num = 0;
+//     do
+//     {
+//         total += num;
+//         num = num +2;
+//     } while (num<=100);
+//     printf("%d\n",total);
+//     return 0;
+    
+// }
+
+// 문제3
+// {
+//     int cur=2;
+//     int is=0;
+
+//     do
+//     {
+//         is = 1;
+//         do
+//         {
+//             pritnf("%d*%d=%d\n",cur,is,cur*is);
+//         } while (is<10);
+//         is++;
+//         cur++;
+        
+//     }
+//     return 0;
+// }
+
+// 문제1 p.167
+// {
+//     int num1, num2;
+//     int result;
+//     printf("두개의 정수: ");
+//     scanf("%d %d ", &num1,&num2);
+
+//     for(result = 0; num1<=num2;  num1++)
+//         result += num1;
+
+//     printf("결과: %d\n",result);
+//     return 0;
+
+// }
+
+// 문제2 
+// {
+//     int num, i;
+//     int result = 1;
+//     printf("정수 입력: ");
+//     scanf("%d",&num);
+
+//     for (i=1; i<=num ; i++ )
+//         result= result*i;
+
+//     printf("%d! = %d\n",num,result);
+//     return 0;
+// }
+
+// 문제1 p.189
+// {
+//     int num;
+//     for (num=1; num<64; num++)
+//         if (num%7==0 && num%9==0)
+//         printf("7과9의 배수: %d\n",num);
+// }
+
+// 문제2  (다시 풀기)
+// {
+//     int num1, num2;
+//     int result1, result2;
+//     printf("두 개의 정수 입력: ");
+//     scanf("%d %d ", &num1, &num2);
+
+//     if (num1>num2)
+//         {result1 = num1 -num2;
+//         printf("두 수의 차: %d\n", result1);}
+//     else 
+//         result2 = num2 - num1;
+//         printf("두 수의 차: %d\n", result2);
+
+//     return 0;
+            
+// }
+
+// 문제3 
+// {
+//     int kor, eng, math;
+//     int total = 0;
+//     printf("국어,영어,수학의 점수를 입력하시오. ");
+//     scanf("%d %d %d", &kor, &eng, &math);
+//     total = (kor+eng+math)/3;
+//     if (total>=90)
+//         printf("성적은 A이다. ");
+//     else if(total>=80)
+//         printf("성적은 B이다. ");
+//     else if(total>=70)
+//         printf("성적은 C이다. ");
+//     else if(total>=50)
+//         printf("성적은 D이다. ");
+//     else
+//         printf("성적은 F이다. ");    
+    
+//     return 0;
+// }
+
+// 문제4
+// {
+//     int num1, num2;
+//     int result;
+//     printf("두 개의 정수 입력: ");
+//     scanf("%d %d ", &num1, &num2);    
+
+//     result = num1>num2?  num1-num2: num2 -num1;
+//     printf("결과: %d \n",result);
+
+//     return 0;
+// }
+
+
+// 문제1 p.193 (풀어보기)
+// {
+//     int num;
+//     printf("2,4,6,8단 출력 ");
+
+//     for (int dan=0; dan<10;dan++)
+//     {
+        
+
+//     }   
+// }
+
+// 문제1 p.260
+
+// {
+//     int arr[5];
+//     int i,max,min,sum;
+//     for (i=0; i<5; i++)
+//     {
+//         printf("5개 정수 입력: ");
+//         scanf("%d",&arr[i]);
+//     }
+//     max=min=sum=arr[0];
+//     for(i=0;i<5;i++)
+//     {
+//         sum += arr[i]-1;
+//         if(max>arr[i])
+//             max = arr[i];
+//         if(min<arr[i])
+//             min = arr[i];
+        
+//     }
+//     printf("%d \n",max);
+//     printf("%d \n",min);
+//     printf("%d \n",sum);
+//     return 0;
+
+// 문제2
+// {
+//     char str[] = {'G','o','o','d',' ', 't','i','m','e'};
+//     int arrLen,i;
+
+//     arrLen = sizeof(str) / sizeof(char);
+
+//     for(i=0;i<arrLen;i++)
+//         printf("%c", str[i]);
+//     printf("\n");
+// }
+
+// 문제1
+// {
+//     char str[5];
+//     int len = 0;
+
+//     printf("문자열 입력: ");
+//     scanf("%s", str);
+    
+//     while(str[len] != 0)
+//     len++;
+
+//     printf("%d \n",len);
+
+// }
+
+// 문제2 ///////////////////////////////////풀어보기
+// {
+//     char str[50];
+
+//     printf("문자열 입력: ");
+//     scanf("%s", str);
+//     printf("%s\n",str);
+
+
+// }
+
+// 문제1 p.284
+// {
+//     int num = 10;
+//     int*ptr1 = &num;            // ptr1을 num 가르킴
+//     int * ptr2 = ptr1;          // ptr2가 ptr1을 가르킴
+
+//     (*ptr1)++;                  // 1씩 증가 즉, num에 1증가
+//     (*ptr2)++;                  // ptr2 1증가 = ptr1 = num
+//     printf("%d \n", num);       // 2번 증가 했으므로 결과는 12
+//     return 0;
+// }
+
+// 문제2 
+// {
+//     int num1 = 10, num2 = 20;
+//     int temp;
+//     int *ptr1 = &num1;
+//     int *ptr2 = &num2;
+
+//     (*ptr1) += 10;
+//     (*ptr2) -= 10;
+
+//     temp = *ptr1;
+//     *ptr1 = *ptr2;
+//     *ptr2 = temp;
+
+
+//     printf("결과: %d \n", num1);
+//     printf("결과: %d \n", num2);
+
+// }
+
+// 문제1        p.320
+// #include<stdio.h>
+
+// int SquareByValue(int num)
+// {
+//     return num*num;
+// }
+// void SquareByReference(int* ptr)
+// {
+//     int num = *ptr;
+//     *ptr = num*num;  
+// }
+// int main(void)
+// {
+//     int num = 10;
+//     printf("%d \n", SquareByValue(num));
+//     SquareByReference(&num);
+//     printf("%d \n",num);
+    
+//     return 0;
+// }
+
+// 문제2 풀기
+
+
+
+
+
+// 문제1            p.348
+// #include<stdio.h>
+// int main(void)
+// {
+//     int arr[3][9];
+//     for(int dan=0;dan<3;dan++)
+//     {
+//         for(int num=0;num<9;num++)
+//         {
+//             arr[dan][num]= (dan+2)*(num+1);
+//         }
+//     }
+//     for(int dan=0;dan<3;dan++)
+//     {
+//         for(int num=0;num<9;num++)
+//         {
+//             printf("%4d",arr[dan][num]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// 문제2 풀기
+
+// 문제 3 풀기
+
+// #include<stdio.h>
+// int main(void)
+// {
+//     int arr[5][5];
+//     int score;
+//     int sttotal = 0;
+//     int obtotal = 0;
+//     printf("과목 점수 입력: ");
+//     for(int i=0;i<4;i++)
+//     {
+//         for(int k=0;k<4;k++)
+//             scanf("%d",&arr[i][k]);
+//             sttotal += arr[i][4];
+//     }
+//     for(int i=0;i<5;i++)
+//     {
+//         for(int k=0;k<5;k++)
+//             obtotal += arr[4][k];
+//     }
+//     for(int i=0;i<5;i++)
+//     {
+//         for(int k=0;k<5;k++)
+//             printf("%5d ",arr[i][k]);
+//     }
+//     printf("\n");
+// }
+
+// 문제1            p.387
+// #include<stdio.h>
+// int main(void)
+// {
+//     int* arr1[5];
+//     int* arr2[3][5];
+
+//     int **ptr1 = arr1;
+//     int  (*ptr2)[5] = arr2;
+// }
